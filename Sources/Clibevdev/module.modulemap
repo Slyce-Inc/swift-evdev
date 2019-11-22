@@ -1,0 +1,5 @@
+module Clibevdev [system] {
+  header "shim.h"
+  link "evdev"
+  export *
+}
