@@ -1,15 +1,61 @@
-
-
+/* 
+ * Values taken from /usr/include/linux/input-event-codes.h
+ */
 public enum KeyCode : UInt16 {
-  case KEY_1 = 2
-  case KEY_2 = 3
-  case KEY_3 = 4
-  case KEY_4 = 5
-  case KEY_5 = 6
-  case KEY_6 = 7
-  case KEY_7 = 8
-  case KEY_8 = 9
-  case KEY_9 = 10
-  case KEY_0 = 11
-  case KEY_ENTER = 28
+  case KEY_RESERVED   = 0
+  case KEY_ESC        = 1
+  case KEY_1          = 2
+  case KEY_2          = 3
+  case KEY_3          = 4
+  case KEY_4          = 5
+  case KEY_5          = 6
+  case KEY_6          = 7
+  case KEY_7          = 8
+  case KEY_8          = 9
+  case KEY_9          = 10
+  case KEY_0          = 11
+  case KEY_MINUS      = 12
+  case KEY_EQUAL      = 13
+  case KEY_BACKSPACE  = 14
+  case KEY_TAB        = 15
+  case KEY_Q          = 16
+  case KEY_W          = 17
+  case KEY_E          = 18
+  case KEY_R          = 19
+  case KEY_T          = 20
+  case KEY_Y          = 21
+  case KEY_U          = 22
+  case KEY_I          = 23
+  case KEY_O          = 24
+  case KEY_P          = 25
+  case KEY_LEFTBRACE  = 26
+  case KEY_RIGHTBRACE = 27
+  case KEY_ENTER      = 28
+  case KEY_LEFTCTRL   = 29
+  case KEY_A          = 30
+  case KEY_S          = 31
+  case KEY_D          = 32
+  case KEY_F          = 33
+  case KEY_G          = 34
+  case KEY_H          = 35
+  case KEY_J          = 36
+  case KEY_K          = 37
+  case KEY_L          = 38
+  case KEY_SEMICOLON  = 39
+  case KEY_APOSTROPHE = 40
+  case KEY_GRAVE      = 41
+  case KEY_LEFTSHIFT  = 42
+  case KEY_BACKSLASH  = 43
+  case KEY_Z          = 44
+  case KEY_X          = 45
+  case KEY_C          = 46
+  case KEY_V          = 47
+  case KEY_B          = 48
+  case KEY_N          = 49
+  case KEY_M          = 50
+  case KEY_COMMA      = 51
+  case KEY_DOT        = 52
+  case KEY_SLASH      = 53
+  case KEY_KPASTERISK = 55
+  case KEY_SPACE      = 57
 }

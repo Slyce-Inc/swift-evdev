@@ -73,11 +73,14 @@ public class EvDev {
       if result != _LIBEVDEV_READ_STATUS_SUCCESS {
         return nil
       }
-      let type = InputEventType(rawValue: ev.type)! /* TODO */
+      guard let type = InputEventType(rawValue: ev.type) else {
+        return nil
+      }
       switch type {
         case .EV_KEY: 
-          let code = KeyCode(rawValue: ev.code)! /* TODO */
-          let state = KeyState(rawValue: ev.value)!/* TODO */
+          guard let code = KeyCode(rawValue: ev.code), let state = KeyState(rawValue: ev.value) else {
+            return nil
+          }
           return .KeyEvent(time: ev.time, code: code, state: state)
         default: 
           return .InputEvent(time: ev.time, type: type, code: ev.code, value: ev.value)
