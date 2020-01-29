@@ -56,6 +56,7 @@ public enum KeyCode : UInt16 {
   case KEY_COMMA      = 51
   case KEY_DOT        = 52
   case KEY_SLASH      = 53
+  case KEY_RIGHTSHIFT = 54
   case KEY_KPASTERISK = 55
   case KEY_SPACE      = 57
 }
